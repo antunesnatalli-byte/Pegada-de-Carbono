@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #0277bd;
+    background-color: #2F4F4F;
     color: white;
     text-align: center;
     padding: 2.5rem 1rem;
@@ -66,7 +66,7 @@ button {
     display: block;
     width: 100%;
     padding: 1rem;
-    background-color: #0288d1;
+    background-color: #2F4F4F;
     color: white;
     border: none;
     border-radius: 6px;
@@ -91,7 +91,7 @@ button:hover {
     background-color: #e1f5fe;
     border-radius: 8px;
     text-align: center;
-    border: 2px solid #29b6f6;
+    border: 2px solid #2F4F4F;
     animation: fadeIn 0.5s ease-in-out;
 }
 
