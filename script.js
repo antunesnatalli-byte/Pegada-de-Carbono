@@ -27,9 +27,24 @@ document.getElementById('carbonForm').addEventListener('submit', function(event)
 
     // Gera uma dica baseada no resultado
     if (totalEmissao < 500) {
-        mensagemDica.innerText = "Excelente! Sua propriedade tem um impacto baixo. Continue com as boas práticas!";
+        // Lista de dicas BOAS (Impacto Baixo)
+        mensagemDica.innerHTML = `
+            <strong>Excelente! Sua propriedade tem um impacto baixo. Continue com estas boas práticas:</strong>
+            <ul style="text-align: left; margin-top: 15px; padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
+                <li style="margin-bottom: 8px;"><strong>Manutenção eficiente do maquinário:</strong> verifique regularmente pneus, motor e filtros para reduzir consumo de combustível.</li>
+                <li style="margin-bottom: 8px;"><strong>Planejamento das atividades agrícolas:</strong> agrupe tarefas e reduza deslocamentos desnecessários de tratores ou máquinas.</li>
+                <li style="margin-bottom: 8px;"><strong>Uso contínuo de adubação orgânica:</strong> prefira compostos, esterco e biofertilizantes para reduzir CO₂ e óxidos de nitrogênio.</li>
+                <li style="margin-bottom: 8px;"><strong>Implementar plantio direto ou mínimo revolvimento do solo:</strong> mantém carbono no solo e diminui uso de máquinas.</li>
+                <li style="margin-bottom: 8px;"><strong>Rotação e diversidade de culturas:</strong> melhora a fertilidade do solo e reduz dependência de insumos químicos.</li>
+                <li style="margin-bottom: 8px;"><strong>Aproveitamento de resíduos agrícolas:</strong> restos de culturas podem virar compostos, evitando emissão de gases na decomposição.</li>
+                <li style="margin-bottom: 8px;"><strong>Eficiência na irrigação:</strong> use sistemas que economizem água e energia, como gotejamento ou sensores de umidade.</li>
+                <li style="margin-bottom: 8px;"><strong>Plantio de árvores e cobertura vegetal:</strong> sequestram carbono, protegem o solo e promovem biodiversidade.</li>
+                <li style="margin-bottom: 8px;"><strong>Uso de combustíveis alternativos ou renováveis:</strong> biodiesel ou eletrificação parcial de máquinas pode reduzir ainda mais CO₂.</li>
+                <li style="margin-bottom: 8px;"><strong>Monitoramento e registro das práticas:</strong> medir consumo de energia, fertilizantes e combustível ajuda a identificar oportunidades de melhoria contínua.</li>
+            </ul>
+        `;
     } else {
-        // Usamos innerHTML para criar uma lista formatada e fácil de ler
+        // Lista de dicas de ALERTA (Impacto Alto)
         mensagemDica.innerHTML = `
             <strong>Atenção! Considere adotar as seguintes práticas para reduzir suas emissões:</strong>
             <ul style="text-align: left; margin-top: 15px; padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
