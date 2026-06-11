@@ -29,7 +29,22 @@ document.getElementById('carbonForm').addEventListener('submit', function(event)
     if (totalEmissao < 500) {
         mensagemDica.innerText = "Excelente! Sua propriedade tem um impacto baixo. Continue com as boas práticas!";
     } else {
-        mensagemDica.innerText = "Atenção: Procure otimizar o uso do trator ou explorar adubação orgânica para reduzir suas emissões.";
+        // Usamos innerHTML para criar uma lista formatada e fácil de ler
+        mensagemDica.innerHTML = `
+            <strong>Atenção! Considere adotar as seguintes práticas para reduzir suas emissões:</strong>
+            <ul style="text-align: left; margin-top: 15px; padding-left: 20px; font-size: 0.95rem; line-height: 1.5;">
+                <li style="margin-bottom: 8px;"><strong>Reduza o uso do trator:</strong> planeje bem o trabalho para diminuir deslocamentos e horas de uso.</li>
+                <li style="margin-bottom: 8px;"><strong>Mantenha o trator bem calibrado:</strong> pneus calibrados, motor regulado e manutenção regular aumentam eficiência de combustível.</li>
+                <li style="margin-bottom: 8px;"><strong>Use adubação orgânica:</strong> esterco, compostos e biofertilizantes liberam menos gases de efeito estufa que fertilizantes químicos.</li>
+                <li style="margin-bottom: 8px;"><strong>Adote rotação de culturas:</strong> alternar plantas ajuda a manter o solo fértil naturalmente, reduzindo necessidade de fertilizantes sintéticos.</li>
+                <li style="margin-bottom: 8px;"><strong>Implemente plantio direto ou mínimo revolvimento do solo:</strong> reduz o uso de maquinário e preserva carbono no solo.</li>
+                <li style="margin-bottom: 8px;"><strong>Prefira combustíveis mais limpos:</strong> biodiesel ou combustíveis renováveis no trator diminuem a emissão de CO₂.</li>
+                <li style="margin-bottom: 8px;"><strong>Aproveite resíduos da fazenda:</strong> palha, restos de culturas e podas podem virar compostos, evitando que se decomponham liberando carbono.</li>
+                <li style="margin-bottom: 8px;"><strong>Instale sistemas de irrigação eficientes:</strong> menos energia gasta significa menos CO₂.</li>
+                <li style="margin-bottom: 8px;"><strong>Plante árvores ou faixas de vegetação:</strong> ajudam a sequestrar carbono e melhorar a biodiversidade da área agrícola.</li>
+                <li style="margin-bottom: 8px;"><strong>Monitore e registre práticas sustentáveis:</strong> medir o consumo de combustível, fertilizantes e adubos permite identificar melhorias contínuas.</li>
+            </ul>
+        `;
     }
 
     // Mostra a caixa de resultado
