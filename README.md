@@ -4,15 +4,13 @@ Este é um projeto escolar interativo desenvolvido para o projeto Agrinho, focad
 
 Todo o processo de desenvolvimento e hospedagem foi feito diretamente no **GitHub**.
 
----
-
-## 📝 O que é a Pegada de Carbono?
+# O que é a Pegada de Carbono?
 
 A pegada de carbono é um indicador ambiental que mede o volume total de gases de efeito estufa (GEE) emitidos direta ou indiretamente por uma pessoa, organização, evento ou produto. 
 
 Na agricultura, compreender esse número é fundamental para adotar práticas mais sustentáveis, reduzir o desperdício de insumos e ajudar a diminuir os impactos das mudanças climáticas.
 
-## 🚀 Funcionalidades do Mini Aplicativo
+# Funcionalidades do Mini Aplicativo
 
 O site possui um simulador prático focado em três pontos principais de consumo em uma propriedade rural:
 
@@ -22,7 +20,7 @@ O site possui um simulador prático focado em três pontos principais de consumo
 
 O usuário preenche os dados mensais e o aplicativo calcula instantaneamente a estimativa de emissões em quilogramas de CO₂, fornecendo um feedback visual para auxiliar na tomada de decisão do agricultor.
 
-## 🛠️ Tecnologias Utilizadas
+#  Tecnologias Utilizadas
 
 Para garantir a simplicidade e a viabilidade do projeto, utilizamos apenas as tecnologias fundamentais do desenvolvimento web:
 
